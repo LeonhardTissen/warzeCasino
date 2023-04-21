@@ -1,0 +1,19 @@
+body {
+    background-color: #77C2FF;
+    overflow: hidden;
+    transition: background-color 2s linear;
+}
+#screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#grass {
+    background-color: #28C138;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: background-color 2s linear;
+}

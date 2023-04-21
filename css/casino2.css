@@ -1,0 +1,53 @@
+body {
+    background-color: #30B830;
+    overflow: hidden;
+}
+#screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#cards {
+    background-color: #28C138;
+    width: 100%;
+    height: 550px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: background-color 2s linear;
+}
+button {
+    opacity: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 156px;
+    height: 264px;
+    cursor: pointer;
+}
+.clickselection {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 0;
+}
+#button1 {
+    transform: translateX(-480px);
+}
+#button2 {
+    transform: translateX(-320px);
+}
+#button3 {
+    transform: translateX(-160px);
+}
+#button5 {
+    transform: translateX(160px);
+}
+#button6 {
+    transform: translateX(320px);
+}
+#button7 {
+    transform: translateX(480px);
+}

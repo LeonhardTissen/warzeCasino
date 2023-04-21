@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CASINO</title>
+		<link rel="icon" type="image/png" href="assets/barze.png" />
+		<link rel="stylesheet" href="https://warze.org/static/icons/icons.css">
+		<link rel="stylesheet" href="css/casino3.css">
+	</head>
+	<body>
+		<div id="cards"></div>
+		<canvas id="screen"></canvas>
+		<div class="imageicon gearicon tooltip" onclick="togglesettings()">
+			<span class="tooltiptext">Settings</span>
+		</div>
+		<div id="settingsscreen">
+			<input type="checkbox" checked id="confetti" onclick="settingsconfetti(this.checked)">
+			<h1>Star Confetti</h1>
+			<br>
+			<input type="checkbox" checked id="background" onclick="settingsbackground(this.checked)">
+			<h1>Parallax Background</h1>
+			<br>
+			<input type="checkbox" checked id="rainbow" onclick="settingsrainbow(this.checked)">
+			<h1>Rainbow Colors</h1>
+			<br>
+			<input type="checkbox" checked id="music" onclick="settingsmusic(this.checked)">
+			<h1>Music</h1>
+			<hr>
+			<h1 class="smallertext">All of the following take effect after death.</h1>
+			<br>
+			<h1>Platform Width</h1>
+			<br>
+			<button onclick="settingsplatform(1)">Normal</button>
+			<button onclick="settingsplatform(0.8)">Hard</button>
+			<button onclick="settingsplatform(0.5)">Insane</button>
+			<button onclick="settingsplatform(0.1)">Impossible</button>
+			<br>
+			<h1>Scroll Speed</h1>
+			<br>
+			<button onclick="settingsscrollspeed(0.5)">Normal</button>
+			<button onclick="settingsscrollspeed(0.8)">Hard</button>
+			<button onclick="settingsscrollspeed(1.2)">Insane</button>
+			<button onclick="settingsscrollspeed(2)">Impossible</button>
+			<hr>
+			<button onclick="togglesettings()">Apply</button>
+			<button onclick="resetgame(); togglesettings()">Apply and Restart</button>
+		</div>
+		<script type="text/javascript" src="js/casino3.js"></script>
+	</body>
+</html>

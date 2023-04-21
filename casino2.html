@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CASINO</title>
+		<link rel="icon" type="image/png" href="assets/barze.png" />
+		<link rel="stylesheet" href="https://warze.org/static/icons/icons.css">
+		<link rel="stylesheet" href="css/casino2.css">
+		<meta name="viewport" content="width=1500, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="cards"></div>
+		<canvas id="screen"></canvas>
+		<div class="clickselection" id="button1" onclick="if (game.yourturn) {sounds.diamond.cloneNode().play(); if (game.diamondbet < Math.min(max_diamonds, game.money)) {game.diamondbet ++;} else {game.diamondbet = Math.ceil(game.money / 100);}}"></div>
+		<div class="clickselection" id="button2" onclick="if (game.yourturn) {sounds.bounce.play(); game.selectedcards[0] = +!game.selectedcards[0];} else {resetround()}"></div>
+		<div class="clickselection" id="button3" onclick="if (game.yourturn) {sounds.bounce.play(); game.selectedcards[1] = +!game.selectedcards[1];} else {resetround()}"></div>
+		<div class="clickselection" id="button4" onclick="if (game.yourturn) {sounds.bounce.play(); game.selectedcards[2] = +!game.selectedcards[2];} else {resetround()}"></div>
+		<div class="clickselection" id="button5" onclick="if (game.yourturn) {sounds.bounce.play(); game.selectedcards[3] = +!game.selectedcards[3];} else {resetround()}"></div>
+		<div class="clickselection" id="button6" onclick="if (game.yourturn) {sounds.bounce.play(); game.selectedcards[4] = +!game.selectedcards[4];} else {resetround()}"></div>
+		<div class="clickselection" id="button7" onclick="if (game.yourturn) {game.yourturn = false; game.cardanimation = 1; sounds.super.play();}"></div>
+		<script type="text/javascript" src="js/casino2.js"></script>
+	</body>
+</html>
